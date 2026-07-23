@@ -4,10 +4,10 @@ import QRCode from 'qrcode';
 import './styles.css';
 
 const ERROR_LEVELS = [
-  { label: 'Low (7%)', value: 'L', short: 'Low' },
-  { label: 'Medium (15%)', value: 'M', short: 'Medium' },
-  { label: 'High (25%)', value: 'Q', short: 'High' },
-  { label: 'Best (30%)', value: 'H', short: 'Best' },
+  { label: '低（7%）', value: 'L', short: '低' },
+  { label: '中（15%）', value: 'M', short: '中' },
+  { label: '高（25%）', value: 'Q', short: '高' },
+  { label: '最佳（30%）', value: 'H', short: '最佳' },
 ];
 
 const FORMAT_OPTIONS = [
@@ -178,27 +178,26 @@ function App() {
     <main className="app-shell">
       <section className="workbench" aria-label="QR code generator">
         <div className="control-panel">
-          <p className="eyebrow">Browser-only QR tool</p>
-          <h1>QR Code Generator</h1>
+          <p className="eyebrow">免費、免登入、本機處理</p>
+          <h1>QR Code 產生器</h1>
           <p className="lede">
-            Paste text or a URL, choose the recovery strength, and export a
-            clean QR code as SVG or PNG. Everything runs locally in your
-            browser.
+            輸入網址、文字、Wi‑Fi 設定或聯絡資訊，選擇容錯能力後下載 SVG 或 PNG。
+            所有內容都只在你的瀏覽器中處理。
           </p>
 
           <label className="field">
-            <span>Content</span>
+            <span>內容</span>
             <textarea
               value={text}
               onChange={(event) => setText(event.target.value)}
-              placeholder="Enter a URL, Wi-Fi string, contact card, or plain text"
+              placeholder="輸入網址、Wi‑Fi 設定、聯絡資訊或文字"
               rows={7}
             />
           </label>
 
           <div className="meta-row">
-            <span>{characterCount.toLocaleString()} characters</span>
-            <span>{selectedLevel.label} correction</span>
+            <span>{characterCount.toLocaleString()} 個字元</span>
+            <span>容錯能力：{selectedLevel.label}</span>
           </div>
 
           <div className="selector-grid">
@@ -217,7 +216,7 @@ function App() {
             </label>
 
             <fieldset className="format-switch">
-              <legend>Export</legend>
+              <legend>下載格式</legend>
               {FORMAT_OPTIONS.map((option) => (
                 <label
                   className={format === option.value ? 'active' : ''}
@@ -244,13 +243,13 @@ function App() {
             onClick={downloadQrCode}
             disabled={!hasQrCode || isGenerating}
           >
-            {isGenerating ? 'Generating...' : `Download ${format.toUpperCase()}`}
+            {isGenerating ? '產生中…' : `下載 ${format.toUpperCase()}`}
           </button>
         </div>
 
         <div className="preview-panel">
           <div className="preview-header">
-            <span>Live preview</span>
+            <span>即時預覽</span>
             <strong>{format.toUpperCase()}</strong>
           </div>
 
@@ -263,30 +262,53 @@ function App() {
                   aria-label="Generated QR code preview"
                 />
               ) : (
-                <img src={pngDataUrl} alt="Generated QR code preview" />
+                <img src={pngDataUrl} alt="產生的 QR Code 預覽" />
               )
             ) : (
               <div className="empty-state">
                 <span />
-                <p>Enter content to generate a local QR code.</p>
+                <p>輸入內容後，即可在本機產生 QR Code。</p>
               </div>
             )}
           </div>
 
           <dl className="spec-strip">
             <div>
-              <dt>Default</dt>
+              <dt>預設格式</dt>
               <dd>SVG</dd>
             </div>
             <div>
-              <dt>Privacy</dt>
-              <dd>Local</dd>
+              <dt>隱私</dt>
+              <dd>本機處理</dd>
             </div>
             <div>
-              <dt>Correction</dt>
+              <dt>容錯能力</dt>
               <dd>{selectedLevel.short}</dd>
             </div>
           </dl>
+        </div>
+      </section>
+      <section className="seo-content" aria-label="QR Code 產生器說明">
+        <div>
+          <p className="eyebrow">使用說明</p>
+          <h2>幾秒鐘完成一張可用的 QR Code</h2>
+        </div>
+        <ol className="guide-grid">
+          <li><strong>輸入內容</strong><span>貼上網址、文字、Wi‑Fi 設定或聯絡資訊。</span></li>
+          <li><strong>選擇容錯</strong><span>一般用途選中等；印刷或可能遮擋時選高。</span></li>
+          <li><strong>下載檔案</strong><span>SVG 適合印刷，PNG 適合簡報與數位素材。</span></li>
+        </ol>
+        <div className="seo-columns">
+          <section>
+            <h2>常見用途</h2>
+            <p>用於網站連結、活動報到、菜單、名片、Wi‑Fi 分享、簡報與印刷品。建立後請先用手機實際掃描，確認內容正確且尺寸足夠。</p>
+          </section>
+          <section>
+            <h2>常見問題</h2>
+            <details><summary>產生 QR Code 需要上傳內容嗎？</summary><p>不用。工具在瀏覽器本機產生 QR Code，輸入內容不會傳送到伺服器。</p></details>
+            <details><summary>SVG 與 PNG 有什麼差別？</summary><p>SVG 是向量格式，放大印刷仍清晰；PNG 適合直接置入簡報、社群貼文或一般文件。</p></details>
+            <details><summary>容錯能力要怎麼選？</summary><p>一般用途可選中等。若 QR Code 可能因印刷、遮擋或環境而受損，請選高或最佳。</p></details>
+          </section>
         </div>
       </section>
     </main>
