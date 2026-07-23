@@ -1,7 +1,7 @@
 ---
-version: alpha
-name: IBM-design-analysis
-description: "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era."
+version: beta
+name: signal-workbench
+description: "A QR generator framed as a compact signal instrument: a deep-blue input bay faces a pale calibration field, while a single sea-glass signal color marks the active state and the generated code. Noto Sans TC carries bilingual reading copy; IBM Plex Sans gives display text its calm proportion; IBM Plex Mono is reserved for state, labels, formats, and scan notation. The signature is not decoration—the QR preview has two calibration corners and the input panel carries a fading module field, echoing the quiet zone and finder-pattern logic of a scannable code."
 
 colors:
   primary: "#0f62fe"
