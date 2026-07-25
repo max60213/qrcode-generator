@@ -5,7 +5,7 @@ import QRCode from 'qrcode';
 import './i18n';
 import './styles.css';
 
-const INITIAL_TEXT = 'https://github.com/max60213/qrcode-generator';
+const INITIAL_TEXT = 'https://qr.maxlin.tw';
 const QR_SIZE = 960;
 const QR_MARGIN = 2;
 const QR_DARK = '#101010';

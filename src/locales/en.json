@@ -10,7 +10,7 @@
     "title": "QR Code Generator with SVG and PNG",
     "lede": "Turn a URL, text, Wi-Fi setting, or contact detail into a QR code. Download a crisp vector SVG or PNG; everything stays in your browser.",
     "content": "Content",
-    "placeholder": "Enter a URL, Wi-Fi setting, contact detail, or text",
+    "placeholder": "Example: https://qr.maxlin.tw, or enter other content",
     "characters": "{{count}} characters",
     "correction": "Error correction: {{level}}",
     "correctionLabel": "Error correction",

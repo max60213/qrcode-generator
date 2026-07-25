@@ -10,7 +10,7 @@
     "title": "QR Code 產生器，支援 SVG 與 PNG",
     "lede": "輸入網址、文字、Wi‑Fi 設定或聯絡資訊，選擇容錯能力後下載清晰的 SVG 向量檔或 PNG 圖片。所有內容都只在你的瀏覽器中處理。",
     "content": "內容",
-    "placeholder": "輸入網址、Wi‑Fi 設定、聯絡資訊或文字",
+    "placeholder": "例如：https://qr.maxlin.tw，或輸入其他內容",
     "characters": "{{count}} 個字元",
     "correction": "容錯能力：{{level}}",
     "correctionLabel": "容錯能力",
