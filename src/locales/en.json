@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Free QR Code Generator | Download SVG & PNG",
-    "description": "Create QR codes for URLs, text, Wi-Fi and contact details in your browser. Download crisp SVG or PNG files—your content is never uploaded.",
-    "ogTitle": "Free QR Code Generator | Download SVG & PNG",
-    "ogDescription": "Create QR codes locally in your browser for URLs, text, Wi-Fi and contact details."
+    "title": "QR Code Generator | Download SVG & PNG",
+    "description": "Create QR codes for URLs, text, Wi-Fi and contact details in your browser. Download crisp vector SVG or PNG files—your content is never uploaded.",
+    "ogTitle": "QR Code Generator | Download SVG & PNG",
+    "ogDescription": "Create QR codes locally in your browser and download print-ready SVG or PNG files."
   },
   "app": {
-    "eyebrow": "Free · no sign-up · processed locally",
-    "title": "QR Code Generator",
-    "lede": "Turn a URL, text, Wi-Fi setting, or contact detail into a QR code. Download a crisp SVG or PNG; everything stays in your browser.",
+    "eyebrow": "SVG vector files · PNG export · processed locally",
+    "title": "QR Code Generator with SVG and PNG",
+    "lede": "Turn a URL, text, Wi-Fi setting, or contact detail into a QR code. Download a crisp vector SVG or PNG; everything stays in your browser.",
     "content": "Content",
     "placeholder": "Enter a URL, Wi-Fi setting, contact detail, or text",
     "characters": "{{count}} characters",
@@ -32,12 +32,12 @@
     "stepThreeTitle": "Download your file",
     "stepThreeText": "SVG is ideal for print. PNG is ideal for slides and digital assets.",
     "usesTitle": "Common uses",
-    "usesText": "Use a QR code for web links, event check-in, menus, business cards, Wi-Fi sharing, presentations, and print. Test it on a phone before publishing to check the content and size.",
+    "usesText": "Use a QR code for web links, event check-in, menus, business cards, Wi-Fi sharing, presentations, and print. SVG stays sharp when enlarged for print, while PNG is convenient for digital assets. Test it on a phone before publishing to check the content and size.",
     "faqTitle": "Frequently asked questions",
     "faqPrivacyQuestion": "Do I need to upload my content?",
     "faqPrivacyAnswer": "No. The QR code is created in your browser and your input is not sent to a server.",
-    "faqFormatQuestion": "What is the difference between SVG and PNG?",
-    "faqFormatAnswer": "SVG is a vector format that stays sharp when printed large. PNG is convenient for slides, social posts, and everyday documents.",
+    "faqFormatQuestion": "What is the difference between SVG and PNG QR codes?",
+    "faqFormatAnswer": "SVG is a vector format that stays sharp when enlarged for print. PNG is convenient for slides, social posts, and everyday documents.",
     "faqCorrectionQuestion": "Which error correction level should I use?",
     "faqCorrectionAnswer": "Medium works for most uses. Choose high or best if the code may be printed, partly covered, or exposed to wear.",
     "error": "This content is too long for the selected QR settings.",
